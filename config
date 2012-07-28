@@ -1,0 +1,5 @@
+ngx_feature_libs="-llua"
+
+ngx_addon_name=ngx_luap_module
+EVENT_MODULES="$EVENT_MODULES ngx_luap_module ngx_luap_core_module"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/src/ngx_luap_module.c"
